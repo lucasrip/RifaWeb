@@ -1,0 +1,39 @@
+
+.menu
+{   
+    display:flex;
+    position: absolute;
+    bottom: 0px;
+  
+     
+}
+.comprar,.listar,.sortear
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    background-color:#5a118f ;
+    font-size: 1.2rem;
+    color:#ffffff;
+    height: 4rem;
+    width: 10rem;
+    padding:0rem 0rem 0rem 1rem;
+    text-align: center;
+} 
+
+.comprar:hover,.listar:hover,.sortear:hover
+{
+    background-color:#330752 ;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.menu img
+{
+    width:2rem;
+    height:2rem;
+    margin-left:1rem;
+}

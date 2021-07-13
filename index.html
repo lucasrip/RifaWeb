@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <title>Rifa</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="shortcut icon" href="../img/logoRifa.ico" />
+ <meta name="description" content="treino de javascript puro">
+ <meta name="keywords" content="rifa,rifaWeb,treino,es6">
+ <meta name="author" content="lucas Henrique">
+ 
+ <link rel="stylesheet" href="css/global.css">
+ <link rel="stylesheet" href="css/tabela.css">
+ <link rel="stylesheet" href="css/Menu/menu.css">
+ <link rel="stylesheet" href="css/responsivo.css">
+ <link rel="stylesheet" href="css/Menu/formCompra.css">
+ <link rel="stylesheet" href="css/Menu/sortear.css">
+ <link rel="stylesheet" href="css/Menu/listagem.css">
+</head>
+<body>
+     
+  
+  <div class="containerOpcoesMenu"> 
+   
+    <div class="listagemContainer">
+          <header class="cabecalhoLista">
+            <img src="./img/logoRifa.ico" alt="logo">
+          </header>
+       
+    </div>
+    
+
+    <div class="formComprar">
+       
+       <header>
+          <img class="logoNaCompra" src="./img/Rifa.svg" alt="fechar modal rifa">
+          <img class="fecharCompra" src="./img/fechar.png" alt="logo na rifa">
+       </header>
+        
+        <div class="inputContainer">
+            <img class="nomeIcon"src="./img/usuario.png" alt="icone de usuario">
+            <input type="text" class="nome" name="nome" placeholder="Nome" maxlength="39" required> 
+        </div>
+
+        <div class="inputContainer">
+          <img  class="cellIcon"src="./img/cell.png" alt="">
+          <input type="cell" class="cell" name="cell" placeholder="Cell"  maxlength="17" required>
+        </div>
+        
+        <div class="inputContainer">
+          <img class="emailIcon"src="./img/email.svg" alt="imagem de email">
+          <input type="email" class="email" name="email" placeholder="Email" maxLength="40" required>
+        </div>
+          
+         <h3>voce pode comprar ate 3 rifas</h3>
+          <h4>preco por Rifa 6$</h4>
+        
+          <div class="opcoesNumeroRifa">
+           <input type="text" class="opcaoRifa" placeholder="Rifa 1" maxlength="2">
+           <input type="text" class="opcaoRifa" placeholder="Rifa 2" maxlength="2">
+           <input type="text" class="opcaoRifa" placeholder="Rifa 3" maxlength="2"> 
+          </div>
+    
+          <div class="calcular">
+              <button class="comprarRifa">Comprar</button>
+              <button class="cancelarCompra">Cancelar</button> 
+          </div>
+
+          <ul class="validaCampo"></ul> 
+    </div>
+
+    <div class="modalSortear">
+      <header>
+        <span class="logoNaCompra"></span>
+        <span class="fecharSortear"></span>
+       </header>
+      <div class="caixaSortear">
+        <button class="btnSortear">Sortear</button>
+        <div class="ganhador"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="tabela"></div>
+   
+    <div class="menu">
+      <div class="comprar">Comprar <img src="./img/cartaoRifa.png"></div>
+      <div class="sortear">Sortear <img src="./img/dado.png"></div>
+      <div class="listar">Listar <img src="./img/listar.svg"></div>
+    </div>
+  </div>
+   
+  <script type="text/javascript" src="js/Tabela/tabelaRifa.js" ></script>
+  <script type="text/javascript" src="js/Tabela/addEventoTabela.js" ></script>
+  <script type="text/javascript" src="js/Menu/formulario.js" ></script>
+  <script type="text/javascript" src="js/Menu/maskFormulario.js" ></script>
+  <script type="text/javascript" src="js/Menu/sortear.js" ></script>
+  <script type="text/javascript" src="js/Menu/menu.js" ></script>
+  <script type="text/javascript" src="js/global.js" ></script>
+  <script type="text/javascript" src="js/Menu/validaFormulario.js" ></script>
+
+
+ </body>
+</html>

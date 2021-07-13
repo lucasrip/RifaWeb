@@ -1,0 +1,53 @@
+
+*
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;        
+}
+
+body,.container,.tabela
+{
+    font-family: monospace;
+    margin:0;
+    padding:0;
+}
+html
+{
+    font-size: 16px;
+}
+
+.container,.tabela
+{
+ display:flex; 
+ flex-wrap: wrap;
+}
+header
+{
+    width: 100%;
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+}
+.tabela
+{
+    margin-top:7rem;
+}
+.container
+{
+    width: 100vw;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+}
+.containerOpcoesMenu
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(56, 56, 56,0.9);
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+}
