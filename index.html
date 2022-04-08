@@ -19,46 +19,48 @@
 </head>
 <body>
      
-  
   <div class="containerOpcoesMenu"> 
    
     <div class="listagemContainer">
-          <header class="cabecalhoLista">
-            <img src="./img/logoRifa.ico" alt="logo">
-          </header>
+      <header>
+        <img class="logoNaCompra" src="./img/Rifa.svg" alt="logo">
+         <h1>Listagem</h1>
+        <img class="fecharLista" src="./img/fecharLista.svg" alt="fechar lista">
        
+     </header>
+        <main>
+        </main>
     </div>
     
-
     <div class="formComprar">
        
        <header>
-          <img class="logoNaCompra" src="./img/Rifa.svg" alt="fechar modal rifa">
-          <img class="fecharCompra" src="./img/fechar.png" alt="logo na rifa">
+          <img class="logoNaCompra" src="./img/Rifa.svg" alt="logo">
+          <img class="fecharCompra " src="./img/fechar.png" alt="fechar">
        </header>
         
         <div class="inputContainer">
             <img class="nomeIcon"src="./img/usuario.png" alt="icone de usuario">
-            <input type="text" class="nome" name="nome" placeholder="Nome" maxlength="39" required> 
+            <input type="text" class="nome" name="nome" placeholder="seu nome completo" maxlength="39" required> 
         </div>
 
         <div class="inputContainer">
           <img  class="cellIcon"src="./img/cell.png" alt="">
-          <input type="cell" class="cell" name="cell" placeholder="Cell"  maxlength="17" required>
+          <input type="cell" class="cell" name="cell" placeholder="+55(12)12345-1234"  maxlength="17" required>
         </div>
         
         <div class="inputContainer">
           <img class="emailIcon"src="./img/email.svg" alt="imagem de email">
-          <input type="email" class="email" name="email" placeholder="Email" maxLength="40" required>
+          <input type="email" class="email" name="email" placeholder="nomeEmail@host.com.br" maxLength="40" required>
         </div>
-          
+       
          <h3>voce pode comprar ate 3 rifas</h3>
           <h4>preco por Rifa 6$</h4>
         
           <div class="opcoesNumeroRifa">
-           <input type="text" class="opcaoRifa" placeholder="Rifa 1" maxlength="2">
-           <input type="text" class="opcaoRifa" placeholder="Rifa 2" maxlength="2">
-           <input type="text" class="opcaoRifa" placeholder="Rifa 3" maxlength="2"> 
+           <select class="opcaoRifa"></select>
+           <select class="opcaoRifa"></select>
+           <select class="opcaoRifa"></select>
           </div>
     
           <div class="calcular">
@@ -66,13 +68,14 @@
               <button class="cancelarCompra">Cancelar</button> 
           </div>
 
-          <ul class="validaCampo"></ul> 
     </div>
+    <ul class="validaForm"></ul>
+ 
 
     <div class="modalSortear">
       <header>
-        <span class="logoNaCompra"></span>
-        <span class="fecharSortear"></span>
+        <img class="logoNaCompra" src="./img/Rifa.svg" alt="logo">
+          <img class="fecharCompra" src="./img/fechar.png" alt="fechar">
        </header>
       <div class="caixaSortear">
         <button class="btnSortear">Sortear</button>
@@ -90,16 +93,18 @@
       <div class="listar">Listar <img src="./img/listar.svg"></div>
     </div>
   </div>
-   
+  
+  <script type="text/javascript" src="js/global.js" async></script>
+  <script type="text/javascript" src="js/Menu/storage.js" async></script>
   <script type="text/javascript" src="js/Tabela/tabelaRifa.js" ></script>
   <script type="text/javascript" src="js/Tabela/addEventoTabela.js" ></script>
   <script type="text/javascript" src="js/Menu/formulario.js" ></script>
   <script type="text/javascript" src="js/Menu/maskFormulario.js" ></script>
   <script type="text/javascript" src="js/Menu/sortear.js" ></script>
   <script type="text/javascript" src="js/Menu/menu.js" ></script>
-  <script type="text/javascript" src="js/global.js" ></script>
   <script type="text/javascript" src="js/Menu/validaFormulario.js" ></script>
-
+  <script type="text/javascript" src="js/Listagem/listagem.js" ></script>
+  
 
  </body>
 </html>

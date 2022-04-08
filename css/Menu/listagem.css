@@ -10,8 +10,74 @@
     background-color: #5a118f;
     color: white;
     transition: left 1s ease;
-    border-right:0.5rem solid #330752;
-    padding:0.5rem 1rem 1rem 1rem;
+    padding: .5rem 0.2rem;
+    overflow-y: scroll;
+}
+.listagemContainer header
+{
+    width: 100%;
+    padding:10px;
+    border-bottom: 2px solid white;
+}
+.listagemContainer header img:last-child
+{
+ margin-right: 10px;
+}
+.listagemContainer h1
+{
+    font-size: 1.4rem;
 }
 
-    
+.listagemContainer .fecharLista
+{
+    width:2rem;
+    height:2rem;
+    filter: invert(100%) sepia(0%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+    cursor: pointer;
+}
+
+
+.listagemContainer .itemDetalhe
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin:0.5rem 0px;
+    padding:10px 0;
+    flex-direction: column;
+    border-bottom: 2px dashed white;
+}
+
+.listagemContainer span
+{
+    display: flex;
+    margin: 0.5rem 0px;
+}
+.listagemContainer span strong
+{
+    margin-right: 1rem;
+}
+
+.listagemContainer .naoComprado
+{
+    margin-top:0.5rem;
+}
+.iconsUser
+{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top:0;
+    right:13px;
+}
+.iconsUser img
+{
+    margin-top:25px;
+    width:3rem;
+    height: 3rem;
+    filter: invert(100%) sepia(0%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+}
+.iconsUser img:hover
+{
+    cursor:pointer;
+}

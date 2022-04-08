@@ -2,7 +2,7 @@
     {
      const {buttons,btnFechar} = mapeamentoDeDom();
     
-     buttons.forEach((button,index)=>button.addEventListener('click',()=>eventoClickButtonRifa(button,index)));
+     buttons.forEach((button,index)=>button.addEventListener('click',()=>eventoClickButtonRifa(index)));
      
      btnFechar.forEach((button)=>button.addEventListener('click',()=>fechaBox()))
 
@@ -14,21 +14,16 @@
 
     }
     
-    function eventoClickButtonRifa(button,index)
+    function eventoClickButtonRifa(index)
     {
         fechaBox();
         chamaBox(index);
-
-        button.style.backgroundColor='#af5fe8 ';
-
     }
-
 
     function chamaBox(index)
     {
      const {caixa,triangulo} = encontraBox(index);
      caixa.style.display="flex";
      triangulo.style.display="flex";
-   
     }
 

@@ -2,16 +2,13 @@ const btnComprar = document.querySelector('.comprar');
 const btnSortear = document.querySelector('.sortear');
 const btnListar = document.querySelector('.listar');
 
-
 const modalSortear = document.querySelector('.modalSortear')
 const formComprar = document.querySelector('.formComprar');
 const  listagemContainer = document.querySelector('.listagemContainer');
 
-
 btnComprar.addEventListener('click',chamaComprar)
 btnSortear.addEventListener('click',chamaSortear)
 btnListar.addEventListener('click',chamaListagem)
-
 
 function chamaComprar()
 {

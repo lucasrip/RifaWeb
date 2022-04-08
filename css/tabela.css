@@ -21,14 +21,16 @@
 .caixa
 {
     display:flex;
+    position:relative;
     position:absolute;
     top:-10rem;
-    width:13rem;
+    width:17rem;
     height:8.5rem;
     background-color: #e1dde0;
     border-radius:0.5rem;
     flex-direction: column;
-    box-shadow: 1px 0px 7px black;
+    box-shadow: 1px 1px 5px black;
+    flex-wrap: wrap;
     z-index:2;
 }
 
@@ -41,17 +43,10 @@
     top:-1.5rem;
 }
 
-.tituloRifa
+.btnFechar 
 {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  color:#330752;
-  font-size:0.5rem;
-}
-
-.logoBalao img , .btnFechar img
-{
+    position: absolute;
+    right: 0;
     width:1.7rem;
     height:1.7rem;
     margin: 3px;
@@ -74,13 +69,10 @@
     width:3rem;
     height:3rem;
     margin: 0.2rem;
-
     border:1px solid #5a118f;
     border-radius: 0.3rem;
-   
     font-size: 1.2rem;
     font-weight: bold;
-     
     color: #330752;
     outline: #994bd1;
     background-color: transparent; 
@@ -91,3 +83,30 @@
     cursor: pointer; 
 }
 
+.caixa div
+{
+    width:90%;
+    margin-top: 15px;
+}
+.caixa div span
+{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height:1.5rem;
+    margin:1px 1rem ;
+    word-break:break-all;
+}
+.caixa span strong
+{
+    margin-right: 5px;
+}
+
+.naoComprado
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    font-size: 1.2rem;
+}
